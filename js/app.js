@@ -7,10 +7,16 @@ $(document).ready(function() {
         return false;
     });
     $("#quick-search").keyup(function () {
-        var srch = $(this).val().trim();
+        var srch = $(this).val().trim().toLowerCase();
         $(".icon-preview-box").hide()
             .filter(function () {
-                return $(this).html().trim().indexOf(srch) != -1;
+                return $(this).html().trim().toLowerCase().indexOf(srch) != -1;
             }).show();
+    });
+    $(".font-size-changer a").click(function (e) {
+        e.preventDefault();
+        $(".font-size-changer .active").removeClass("active");
+        $(".icon-preview-box").removeClass("small-icons medium-icons large-icons").addClass($(this).attr("class"));
+        $(this).addClass("active");
     });
 });
