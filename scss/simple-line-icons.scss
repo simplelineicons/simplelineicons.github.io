@@ -7,12 +7,12 @@ $simple-line-icon-prefix: "icon-" !default;
 @if $simple-line-font-family == "simple-line-icons" {
   @font-face {
     font-family: '#{$simple-line-font-family}';
-    src:    url('#{$simple-line-font-path}Simple-Line-Icons.eot?v=2.2.2');
-    src:    url('#{$simple-line-font-path}Simple-Line-Icons.eot?#iefix&v=2.2.2') format('embedded-opentype'),
-            url('#{$simple-line-font-path}Simple-Line-Icons.ttf?v=2.2.2') format('truetype'),
-            url('#{$simple-line-font-path}Simple-Line-Icons.woff2?v=2.2.2') format('woff2'),
-            url('#{$simple-line-font-path}Simple-Line-Icons.woff?v=2.2.2') format('woff'),
-            url('#{$simple-line-font-path}Simple-Line-Icons.svg?v=2.2.2#simple-line-icons') format('svg');
+    src:    url('#{$simple-line-font-path}Simple-Line-Icons.eot?v=2.3.0');
+    src:    url('#{$simple-line-font-path}Simple-Line-Icons.eot?v=2.3.0#iefix') format('embedded-opentype'),
+            url('#{$simple-line-font-path}Simple-Line-Icons.ttf?v=2.3.0') format('truetype'),
+            url('#{$simple-line-font-path}Simple-Line-Icons.woff2?v=2.3.0') format('woff2'),
+            url('#{$simple-line-font-path}Simple-Line-Icons.woff?v=2.3.0') format('woff'),
+            url('#{$simple-line-font-path}Simple-Line-Icons.svg?v=2.3.0#simple-line-icons') format('svg');
     font-weight: normal;
     font-style: normal;
   }
@@ -53,6 +53,7 @@ $simple-line-icon-prefix: "icon-" !default;
   &check,
   &clock,
   &plus,
+  &minus,
   &close,
   &trophy,
   &screen-smartphone,
@@ -350,6 +351,10 @@ $simple-line-icon-prefix: "icon-" !default;
 
 .#{$simple-line-icon-prefix}plus:before {
   content: "\e095";
+}
+
+.#{$simple-line-icon-prefix}minus:before {
+  content: "\e615";
 }
 
 .#{$simple-line-icon-prefix}close:before {
