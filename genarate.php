@@ -39,6 +39,15 @@ $css = 'css/simple-line-icons.css';
 <div class="container mt">
     <h1 class="text-center">Preview</h1>
     <p class="text-center">Click on the icons to get the icon class name</p>
+    <div class="quick-search">
+        <input type="text" id="quick-search" placeholder="Search..." />
+        <i class="icon-magnifier"></i>
+    </div>
+    <div class="text-center font-size-changer">
+        <a href="#" class="small-icons"><i class="icon-info"></i> Small</a> &bull;
+        <a href="#" class="medium-icons active"><i class="icon-info"></i> Medium</a> &bull;
+        <a href="#" class="large-icons"><i class="icon-info"></i> Large</a>
+    </div>
     <?php
     $pattern = '/\.(icon-(?:\w+(?:-)?)+):before\s+{\s*content:\s*"(.+)";\s+}/';
     $css_file = file_get_contents($css);
