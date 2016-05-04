@@ -6,12 +6,12 @@
 //Fonts
 @font-face {
   font-family: '@{simple-line-font-family}';
-  src:  url('@{simple-line-font-path}Simple-Line-Icons.eot?v=2.3.0');
-  src:  url('@{simple-line-font-path}Simple-Line-Icons.eot?v=2.3.0#iefix') format('embedded-opentype'),
-        url('@{simple-line-font-path}Simple-Line-Icons.ttf?v=2.3.0') format('truetype'),
-        url('@{simple-line-font-path}Simple-Line-Icons.woff2?v=2.3.0') format('woff2'),
-        url('@{simple-line-font-path}Simple-Line-Icons.woff?v=2.3.0') format('woff'),
-        url('@{simple-line-font-path}Simple-Line-Icons.svg?v=2.3.0#simple-line-icons') format('svg');
+  src:  url('@{simple-line-font-path}Simple-Line-Icons.eot?v=2.3.1');
+  src:  url('@{simple-line-font-path}Simple-Line-Icons.eot?v=2.3.1#iefix') format('embedded-opentype'),
+        url('@{simple-line-font-path}Simple-Line-Icons.woff2?v=2.3.1') format('woff2'),
+        url('@{simple-line-font-path}Simple-Line-Icons.woff?v=2.3.1') format('woff'),
+        url('@{simple-line-font-path}Simple-Line-Icons.ttf?v=2.3.1') format('truetype'),
+        url('@{simple-line-font-path}Simple-Line-Icons.svg?v=2.3.1#simple-line-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -58,6 +58,7 @@
   &plus,
   &minus,
   &close,
+  &organization,
   &trophy,
   &screen-smartphone,
   &screen-desktop,
@@ -195,7 +196,7 @@
   &social-linkedin,
   &social-pinterest,
   &social-github,
-  &social-gplus,
+  &social-google,
   &social-reddit,
   &social-skype,
   &social-dribbble,
@@ -362,6 +363,10 @@
 
 .@{simple-line-icon-prefix}close:before {
   content: "\e082";
+}
+
+.@{simple-line-icon-prefix}organization:before {
+  content: "\e616";
 }
 
 .@{simple-line-icon-prefix}trophy:before {
@@ -912,7 +917,7 @@
   content: "\e60c";
 }
 
-.@{simple-line-icon-prefix}social-gplus:before {
+.@{simple-line-icon-prefix}social-google:before {
   content: "\e60d";
 }
 
