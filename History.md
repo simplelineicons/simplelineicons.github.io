@@ -1,3 +1,15 @@
+2.4.0 / 2016-09-18
+==================
+
+  * Add social-steam icon
+  * Rename vkontakte to social-vkontakte icon
+
+2.3.3 / 2016-09-17
+==================
+
+  * Add event icon, fix #57
+  * Add vkontakte icon, fix #56
+
 2.3.2 / 2016-06-13
 ==================
 
