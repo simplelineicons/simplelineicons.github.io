@@ -9,47 +9,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="icon" href="https://assets-cdn.github.com/favicon.ico">
+	<link rel="icon" href="favicon.png">
 	<title>Simple Line Icons</title>
 	<meta name="google-site-verification" content="LkR1LpArsDyFdPxWmN4-p-Zc1FpanalEVgevCj0JwaY" />
 	<style>
 	 body {
 		font-family: "Helvetica Neue", "Roboto", sans-serif;
 	}
-
 	.navbar-inverse .navbar-brand,
 	.navbar-inverse .navbar-nav>li>a {
 		color: #ffffff;
 	}
-
 	.navbar-nav>li>iframe {
 		margin-top: 15px;
 	}
-	
 	.download {
 		padding: 8px 0 0 8px;
 	}
-
 	.download .btn {
 		padding-right: 25px;
 		padding-left: 25px;
 		height: 32px;
 		line-height: 0;
 	}
-
 	.quick-search {
 		width: 200px;
 		margin: 25px auto;
 		position: relative;
 	}
-
 	.quick-search i {
 		position: absolute;
 		left: 7px;
 		top: 7px;
 		color: #ccc;
 	}
-
 	.quick-search input {
 		border: 1px solid #ccc;
 		border-radius: 3px;
@@ -57,69 +50,56 @@
 		text-indent: 22px;
 		width: 100%;
 	}
-
 	.quick-search input:focus {
 		border-color: #999;
 	}
-
 	.quick-search input:focus+i {
 		color: #999;
 	}
-
 	.preview {
 		padding: 15px 0;
 		position: relative;
 		height: 100px;
 	}
-
 	.icons {
 		font-size: 18px;
 		padding-right: 7px;
 	}
-
 	.code-preview {
 		display: none;
 	}
-
 	.name {
 		font-size: 18px;
 	}
-
 	.show-code {
 		color: #101010;
 	}
-
 	.mt {
 		padding-top: 50px;
 	}
-
 	.use-cdn {
 		margin-right: 2rem;
 	}
-	
+
 	.show-code:hover,
 	.show-code:active,
 	.show-code:focus {
 		color: #252525;
 		text-decoration: none;
 	}
-
 	.small-icons,
 	.small-icons .icons {
 		font-size: 8pt;
 		vertical-align: middle;
 	}
-
 	.medium-icons {
 		vertical-align: middle;
 	}
-
 	.large-icons,
 	.large-icons .icons {
 		font-size: 22pt;
 		vertical-align: middle;
 	}
-
 	.font-size-changer a {
 		text-decoration: none;
 		border: 1px solid #fff;
@@ -128,20 +108,70 @@
 		padding: 5px;
 		vertical-align: middle;
 	}
-
+	.responsive-iframe-container {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		padding-top: 56.25%;
+	}
+	.responsive-iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
 	.font-size-changer a.active {
 		border-color: #999;
 		color: #333;
 	}
-
 	.footer {
 		background: #efefef;
 		min-height: 60px;
 		padding: 20px;
 	}
-
 	.footer p {
 		margin-bottom: 0;
+	}
+	@media only screen and (max-width: 480px) {
+		.navbar-nav {
+			text-align: center;
+		}
+		.nav > li {
+			display: inline-block;
+		}
+		.nav > li:last-child {
+			display: block;
+		}
+		.nav > li.download .btn {
+			max-width: 98%;
+			padding: 0 2rem;
+			line-height: 32px;
+		}
+		.quick-search {
+			width: 100%;
+		}
+		.ad-728x90 {
+			display: none;
+		}
+		.footer p.pull-right {
+			float: none !important;
+			margin-top: 4rem;
+			padding: 2rem 0;
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		.ad-300x250 {
+			display: none;
+		}
+	}
+	.ad-iframe {
+		display: block;
+		overflow: hidden;
+		margin: 0 auto;
 	}
 	  </style>
 </head>
@@ -1124,6 +1154,12 @@
 		   <a href="#" class="show-code" title="click to show css class name"><i class="icon-social-steam icons"></i><span class="name">social-steam</span> <code class="code-preview" style="display: none;">.icon-social-steam</code></a>
 		</div>
 	 </div>
+  </div>
+  <div class="container ad-container ad-728x90" style="padding:60px 0">
+	<iframe class="ad-iframe" src="https://adhub.one/rand/728x90" width="728" height="90" frameborder="0"></iframe>
+  </div>
+  <div class="container ad-container ad-300x250" style="padding:60px 0">
+	<iframe class="ad-iframe" src="https://adhub.one/rand/300x250" width="300" height="250" frameborder="0"></iframe>
   </div>
   <footer class="footer">
 	 <div class="container">
