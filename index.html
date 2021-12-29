@@ -192,9 +192,19 @@
 		top: 80px;
 		right: 30px;
 	}
-	.ad-floating-inner {
-		position: relative;
+	.ad-160x600 {
+		display: none;
+		position: fixed;
+		z-index: 999;
+		top: 90px;
 	}
+	.ad-160x600-right {
+		right: 30px;
+	}
+	.ad-160x600-left {
+		left: 30px;
+	}
+	.ad-160x600,
 	.ad-floating,
 	.ad-floating-inner	{
 		overflow: hidden;
@@ -202,6 +212,7 @@
 	.ad-floating-inner {
 		position: relative;
 	}
+	.ad-160x600 .btn-close,
 	.ad-floating .btn-close {
 		position: absolute;
 		top: 1px;
@@ -217,16 +228,37 @@
 		color: rgba(0, 0, 0, 0.9);
 		opacity: 0.5;
 	}
+	.ad-160x600:hover .btn-close,
 	.ad-floating:hover .btn-close {
 		opacity: 1;
 	}
+	.ad-160x600 iframe,
 	.ad-floating iframe {
 		overflow: hidden;
 	}
 	@media only screen and (min-width: 992px) {
-		.ad-floating {
+		.ad-floating,
+		.ad-160x600 {
 			display: block;
 		}
+	}
+	.ad-info {
+		position: absolute;
+		top: 1px;
+		right: 1px;
+		width: 16px;
+		height: 16px;
+		line-height: 16px;
+		text-align: center;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		background: rgba(255, 255, 255, 0.5);
+		font-family: monospace;
+		cursor: help;
+		opacity: 0.5;
+	}
+	.ad-160x600:hover .ad-info,
+	.ad-floating:hover .ad-info {
+		opacity: 1;
 	}
 	</style>
 	<script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -255,10 +287,22 @@
 		</div>
 	 </div>
   </nav>
-  <div class="ad-floating ad-250x250" id="ad-floating">
+  <div class="ad-160x600 ad-160x600-left" id="ad-160x600-left">
 	<div class="ad-floating-inner">
-		<button type="button" class="btn-close" title="Close Ad" onclick="document.getElementById('ad-floating').remove();">&times;</button>
-		<iframe src="https://adhub.one/rand/250x250/" width="250" height="250" frameborder="0" style="border:none"></iframe>
+		<button type="button" class="btn-close" title="Close Ad" onclick="document.getElementById('ad-160x600-left').remove();">&times;</button>
+		<a href="https://publy.gumroad.com/l/first-100-usd-online" style="display:block;width:160px;height:600px">
+			<img src="https://img.adhub.one/publy/how-to-make-your-first-100-usd-online-160x600-1.png" width="160" height="600">
+		</a>
+		<div class="ad-info" title="Sponsored">i</div>
+	</div>
+  </div>
+  <div class="ad-160x600 ad-160x600-right" id="ad-160x600-right">
+	<div class="ad-floating-inner">
+		<button type="button" class="btn-close" title="Close Ad" onclick="document.getElementById('ad-160x600-right').remove();">&times;</button>
+		<a href="https://publy.gumroad.com/l/first-100-usd-online" style="display:block;width:160px;height:600px">
+			<img src="https://img.adhub.one/publy/how-to-make-your-first-100-usd-online-160x600-1.png" width="160" height="600">
+		</a>
+		<div class="ad-info" title="Sponsored">i</div>
 	</div>
   </div>
   <div class="container mt">
